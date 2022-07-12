@@ -1,0 +1,10 @@
+﻿@page
+@model KnabTestSample.Pages.CryptoCurrencyModel
+@{
+}
+
+<form method="post">
+    <input id="txtCryptoCurrencyCode" name="txtCryptoCurrencyCode" type="text" placeholder="Please Enter CryptoCurrency Code with 3 Letters (like BTC)" style="width:60vw;" /><br />
+    <textarea id="txtCurrentQuote" disabled name="txtCurrentQuote" placeholder="Result will be shown here" rows="6" style="width:60vw;">@Model.currentQuote</textarea><br /><br />
+    <input id="btnFind" type="submit" value="Find & Display" />
+</form>
